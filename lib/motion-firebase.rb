@@ -17,4 +17,8 @@ Motion::Project::App.setup do |app|
   app.frameworks += ['CFNetwork', 'Security', 'SystemConfiguration']
   # for twitter or facebook
   app.weak_frameworks += ['Accounts', 'Social']
+
+  app.pods do
+    pod "Firebase", "~> 2.1"
+  end
 end
